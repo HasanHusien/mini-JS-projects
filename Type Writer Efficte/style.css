@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  width: 90%;
+  margin: 250px auto;
+  background: #eee;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.5s;
+  text-align: center;
+}
+.container #type {
+  color: #777;
+  font-size: 20px;
+}
+.container #btn {
+  padding: 5px 10px;
+  color: #777;
+}

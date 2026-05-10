@@ -1,0 +1,65 @@
+.container {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+.container .color-swtich {
+    list-style: none;
+}
+.container .color-swtich li {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    margin-right:5px ;
+    display: inline-block;
+    cursor: pointer;
+}
+.container .color-swtich li:nth-child(1){
+    background-color: red;
+}
+.container .color-swtich li:nth-child(2){
+    background-color: blue;
+}
+.container .color-swtich li:nth-child(3){
+    background-color: black;
+}
+.container .color-swtich li:nth-child(4){
+    background-color: gold;
+}
+.container h3 {
+    color: red;
+}
+.container h4 {
+    display: block;
+    background-color: red;
+    padding: 15px;
+    color: white;
+}
+.red .container h3{
+    color: red;
+} 
+.red .container h4 {
+    background: red;
+    color: white;
+}
+.blue .container h3 {
+    color: blue;
+}
+.blue .container h4 {
+    background-color: blue;
+    color: white;
+}
+.black .container h3 {
+    color: black;
+}
+.black .container h4{
+    background-color: black;
+    color: white;
+}
+.gold .container h3 {
+    color: gold;
+}
+.gold .container h4 {
+    background-color: gold;
+    color: white;
+}

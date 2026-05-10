@@ -1,0 +1,24 @@
+.last {
+  color: red;
+}
+form {
+  width: 90%;
+  margin: 250px auto;
+  display: flex;
+  gap: 10px;
+}
+form textarea {
+  border: none;
+  background: #eee;
+  border-radius: 10px;
+  padding: 15px;
+}
+textarea:focus {
+  outline: none;
+}
+span {
+  color: #777;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: no-drop;
+}

@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif; 
+}
+.tasks-container {
+    background-color: #f6f6f6;
+    width: 600px;
+    margin: 30px auto 0;
+}
+
+.tasks-container .add-task {
+    position: relative;
+    background-color:#009688;
+    padding: 15px;
+}
+.tasks-container .add-task input {
+    display: inline-block;
+    padding:10px 15px;
+    border: none;
+    background-color: rgb(255, 255, 255 , .3);
+    width: calc(100% -  15px);
+    font-size: 20px;
+    color: white;
+}
+.tasks-container .add-task input:focus {
+    outline: none;
+}
+.tasks-container .add-task .plus {
+    position: absolute;
+    width: 43px;
+    height: 43px;
+    background-color: #fff;
+    right: 12px;
+    border-radius: 50%;
+    line-height: 43px;
+    text-align: center;
+    color: #009688;
+    cursor: pointer;
+    font-size: 35px;
+    transition: transform .3s;
+
+}
+.tasks-container .add-task .plus:hover {
+    transform: rotate(90deg);
+}
+.tasks-container .tasks-content {
+    padding: 15px;
+}
+.tasks-container .tasks-content .no-tasks {
+    color: #777;
+    font-size: 15px;
+}
+.tasks-container .tasks-content > span {
+    display: block;
+    background-color: #fff;
+    padding: 10px;
+}
+.tasks-container .tasks-content > span:not(:last-child){
+    margin-bottom: 10px;
+}
+.tasks-container .tasks-content .task-box .delete {
+    background-color: #e91e68;
+    float: right;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+.tasks-container .tasks-content .task-box.finished {
+    text-decoration: line-through;
+}  
+.tasks-status {
+    width: 600px;
+    margin: 10px auto;
+    overflow: hidden;
+    font-size: 14px;
+}
+.tasks-status .tasks-count {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+.tasks-status .tasks-complate {
+    float: right;
+    width: 50%;
+    padding: 10px;
+    text-align: right;
+}
+.tasks-status .tasks-count span,
+.tasks-status .tasks-complate span {
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #fff;
+    padding: 3px 6px;
+    color: #fff;
+    border-radius: 4px;
+
+}
+.tasks-status .tasks-count span {
+    background-color: #e91e68;
+}
+.tasks-status .tasks-complate span {
+    background-color: #009688;
+
+}
+input.sub {
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    background-color: #e91e68;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}
